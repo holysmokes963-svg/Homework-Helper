@@ -1,4 +1,4 @@
-# 🦝 HomeworkHelper
+# 🦝 Homework Helper
 
 > An AI-powered homework helper that reads your question and provides an answer through a separate AI window.
 
