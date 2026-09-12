@@ -1,0 +1,265 @@
+██╗███╗   ██╗███████╗████████╗██████╗ ██╗   ██╗ ██████╗████████╗██╗ ██████╗ ███╗   ██╗███████╗
+██║████╗  ██║██╔════╝╚══██╔══╝██╔══██╗██║   ██║██╔════╝╚══██╔══╝██║██╔═══██╗████╗  ██║██╔════╝
+██║██╔██╗ ██║███████╗   ██║   ██████╔╝██║   ██║██║        ██║   ██║██║   ██║██╔██╗ ██║███████╗
+██║██║╚██╗██║╚════██║   ██║   ██╔══██╗██║   ██║██║        ██║   ██║██║   ██║██║╚██╗██║╚════██║
+██║██║ ╚████║███████║   ██║   ██║  ██║╚██████╔╝╚██████╗   ██║   ██║╚██████╔╝██║ ╚████║███████║
+╚═╝╚═╝  ╚═══╝╚══════╝   ╚═╝   ╚═╝  ╚═╝ ╚═════╝  ╚═════╝   ╚═╝   ╚═╝ ╚═════╝ ╚═╝  ╚═══╝╚══════╝
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+                    HOMEWORK HELPER
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+An AI-powered homework helper that reads your question and
+provides an answer through a separate AI window.
+
+
+██████╗ ███████╗ ██████╗ ██╗   ██╗██╗██████╗ ███████╗███╗   ███╗███████╗███╗   ██╗████████╗███████╗
+██╔══██╗██╔════╝██╔═══██╗██║   ██║██║██╔══██╗██╔════╝████╗ ████║██╔════╝████╗  ██║╚══██╔══╝██╔════╝
+██████╔╝█████╗  ██║   ██║██║   ██║██║██████╔╝█████╗  ██╔████╔██║█████╗  ██╔██╗ ██║   ██║   ███████╗
+██╔══██╗██╔══╝  ██║▄▄ ██║██║   ██║██║██╔══██╗██╔══╝  ██║╚██╔╝██║██╔══╝  ██║╚██╗██║   ██║   ╚════██║
+██║  ██║███████╗╚██████╔╝╚██████╔╝██║██║  ██║███████╗██║ ╚═╝ ██║███████╗██║ ╚████║   ██║   ███████║
+╚═╝  ╚═╝╚══════╝ ╚══▀▀═╝  ╚═════╝ ╚═╝╚═╝  ╚═╝╚══════╝╚═╝     ╚═╝╚══════╝╚═╝  ╚═══╝   ╚═╝   ╚══════╝
+                                                                                                   
+1. INSTALL PYTHON
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Download Python:
+
+https://www.python.org/downloads/
+
+IMPORTANT:
+
+During Python installation, make sure you check:
+
+☑ Add Python to PATH
+
+
+2. INSTALL VISUAL STUDIO CODE
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Download Visual Studio Code:
+
+https://code.visualstudio.com
+
+
+3. DOWNLOAD HOMEWORK HELPER
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Download this GitHub repository.
+
+Open the HomeworkHelper folder in Visual Studio Code.
+
+
+4. OPEN THE TERMINAL
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+In Visual Studio Code:
+
+Click:
+
+View → Terminal
+
+OR press:
+
+Ctrl + `
+
+
+5. INSTALL EVERYTHING
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Copy and paste this into the terminal:
+
+python -m venv venv
+
+venv\Scripts\activate
+
+python -m pip install --upgrade pip
+
+pip install -r requirements.txt
+
+
+If everything worked correctly, you're ready to go.
+
+6. OBTAINING YOUR API KEY
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+WARNING, DO NOT SHARE, GIVE, OR TALK ABOUT YOUR API KEY, FOR IF THE API KEY IS USED HEAVILY, IT CAN RUN YOU A BILL THAT CAN GO UP TO $$$
+
+Open your web browser of choice
+
+Go to " https://platform.openai.com "
+
+Log in to your account, or create one
+
+On the left bar on your screen, click "API Keys"
+
+At the top right of the page will be a button "Create new secret key"
+
+Name it "Homework Helper" (or dont, up to u)
+
+SET EXPIRATION TO NEVER
+
+Press "Create secret key"
+
+A menu "Save your key" will pop up, on that menu you will see your key, press copy
+
+once copied, go back to the Visual Code Editer, and open ".env"
+
+In ".env" there will already be a script, replace "Your_key" with.. your key
+
+Your API key should be set up and now the AI will run
+
+TO AVOID PAYING MONTHLY TO KEEP YOUR API KEY, DELETE YOUR OLD ONE AND MAKE A NEW ONE AND THE PRICE WILL RESET TO 0.00
+
+7. START HOMEWORK HELPER
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Next,
+
+Make sure your virtual environment is activated:
+
+venv\Scripts\activate
+
+Then run:
+
+python main.py
+
+
+A window will open shortly after.
+
+
+8. USING HOMEWORK HELPER
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Once the window opens:
+
+Press F3 to start the AI.
+
+Click the window containing the question.
+
+Wait for the AI to respond.
+
+The AI will display the answer in the Homework Helper window.
+
+Type your answer in.
+
+That's it!
+
+
+9. CONTROLS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+F3
+START / ENABLE AI
+
+
+F4
+STOP / DISABLE AI
+
+
+10. STOPPING THE APP
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+To completely shut off Homework Helper:
+
+Go back to the terminal in Visual Studio Code.
+
+Press:
+
+Ctrl + C
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+                         TROUBLESHOOTING
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+PYTHON IS NOT RECOGNIZED
+
+If you get something like:
+
+'python' is not recognized as an internal or external command
+
+Python is either not installed correctly or was not added to PATH.
+
+Reinstall Python and make sure:
+
+☑ Add Python to PATH
+
+is checked during installation.
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+MODULE NOT FOUND
+
+If you see:
+
+ModuleNotFoundError
+
+run:
+
+venv\Scripts\activate
+
+pip install -r requirements.txt
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+API KEY ERROR
+
+If you see:
+
+API key not provided
+
+make sure your API key is configured correctly.
+
+DO NOT post your API key publicly.
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+F3 DOESN'T WORK
+
+Make sure:
+
+• Homework Helper is running
+• The AI has been started with F3
+• The Homework Helper window is open
+• The program has not been stopped with Ctrl+C
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+THE APP WON'T START
+
+Try:
+
+venv\Scripts\activate
+
+pip install -r requirements.txt
+
+python main.py
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+
+██████╗  ██████╗ ███╗   ██╗ █████╗ ████████╗██╗ ██████╗ ███╗   ██╗███████╗
+██╔══██╗██╔═══██╗████╗  ██║██╔══██╗╚══██╔══╝██║██╔═══██╗████╗  ██║██╔════╝
+██║  ██║██║   ██║██╔██╗ ██║███████║   ██║   ██║██║   ██║██╔██╗ ██║███████╗
+██║  ██║██║   ██║██║╚██╗██║██╔══██║   ██║   ██║██║   ██║██║╚██╗██║╚════██║
+██████╔╝╚██████╔╝██║ ╚████║██║  ██║   ██║   ██║╚██████╔╝██║ ╚████║███████║
+╚═════╝  ╚═════╝ ╚═╝  ╚═══╝╚═╝  ╚═╝   ╚═╝   ╚═╝ ╚═════╝ ╚═╝  ╚═══╝╚══════╝
+
+ █████╗ ██████╗ ██████╗ ██████╗ ███████╗ ██████╗██╗ █████╗ ████████╗███████╗██████╗ 
+██╔══██╗██╔══██╗██╔══██╗██╔══██╗██╔════╝██╔════╝██║██╔══██╗╚══██╔══╝██╔════╝██╔══██╗
+███████║██████╔╝██████╔╝██████╔╝█████╗  ██║     ██║███████║   ██║   █████╗  ██║  ██║
+██╔══██║██╔═══╝ ██╔═══╝ ██╔══██╗██╔══╝  ██║     ██║███████║   ██║   ██╔══╝  ██║  ██║
+██║  ██║██║     ██║     ██║  ██║███████╗╚██████╗██║██║  ██║   ██║   ███████╗██████╔╝
+╚═╝  ╚═╝╚═╝     ╚═╝     ╚═╝  ╚═╝╚══════╝ ╚═════╝╚═╝╚═╝  ╚═╝   ╚═╝   ╚══════╝╚══════╝
+
+
+Cash App: $
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+                         HAVE FUN :)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
